@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  /* background-image: url('../img/bg.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  justify-content: center;
+  background-color: lightskyblue;
+  min-height: 100vh;
+  max-width: 800px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.container h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.input-area {
+  color: wheat;
+}
+.task-area {
+  border: 2px solid white;
+  margin-top: 10px;
+}
+#plus-button:hover{
+  transition: .5s;
+  margin-bottom: 10px;
+  background-color: white;
+}
+#plus-button:active{
+  transition: .5s;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.task-tabs {
+  display: flex;
+  border-bottom: 2px solid white;
+  position: relative;
+}
+.task-tabs div {
+  padding: 1em;
+  cursor: pointer;
+}
+#under-line {
+  height: 4px;
+  background-color: lightsalmon;
+  position: absolute;
+  width: 60px;
+  left: 0;
+  top: 52px;
+  padding: 0;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+}
+.task-done {
+  text-decoration: line-through;
+}
+#delete{
+  display: none;
+}
+#todo {
+  position: relative;
+  /* display: block; */
+}
+#todo:focus-within {
+  padding: 8px;
+  transition: .5s;
+  margin-bottom: 10px;
+}
+#todo::after,::before {
+  box-sizing: border-box;
+}
